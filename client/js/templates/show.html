@@ -1,0 +1,75 @@
+<div class="modal fade"> 
+          <div class="modal-dialog"> 
+            <div class="modal-content"> 
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+                <div class="modal-title">
+                      <span id="showTitle">{{log.spot_name}}  </span>
+                    <span>  {{log.date | date}}    </span>
+                    <div class="msw-sw msw-sw-{{log.forecast.condition.weather}}" id="weatherIcon"></div>
+              </div> 
+            </div> 
+
+              <div class="modal-body">
+                <!--  <span><img src="http://icons.iconarchive.com/icons/fasticon/beach/128/wave-icon.png" id="waveIcon"></span> -->
+
+
+
+                 <span class="waveHt">{{log.forecast.swell.minBreakingHeight}} - {{log.forecast.swell.maxBreakingHeight}} ft</span>
+                 <div id="ratingContainer"></div>
+
+                  <div>
+                    <p style="font-style:italic">{{log.description}}</p>
+                  </div>
+
+                  <div class="windDirection">
+                    <label for="wind" class="condLabels">Wind: </label>
+                    <span class=".msw-swa-{{log.forecast.wind.compassDirection}}" name="wind">{{log.forecast.wind.compassDirection}}</span>
+                  </div>
+               
+                <label for="myRate" id="myRate" class="condLabels">My Rating</label>
+                <div name="myRate" id="myRatingContainer"></div>
+
+    </div>  
+
+
+
+            
+                <div class="modal-footer">
+                  
+                  <a class="fancybox" rel="group" href="{{log.forecast.charts.swell}}" title="Swell Chart">
+                    <img src="{{log.forecast.charts.swell}}" class="swellImg pull-left"> 
+                  </a>
+                  
+                   <a class="fancybox" rel="group" href="{{log.forecast.charts.period}}" title="Period Chart">
+                    <img src="{{log.forecast.charts.period}}" class="chartImg pull-left">
+                  </a>
+
+
+
+                  <a class="fancybox" rel="group" href="{{log.forecast.charts.wind}}" title="Wind Chart">
+                  <img src="{{log.forecast.charts.wind}}" class="chartImg pull-left">
+                  </a>
+
+
+                  <a class="fancybox" rel="group" href="{{log.forecast.charts.pressure}}" title="Pressure Chart">
+                  <img src="{{log.forecast.charts.pressure}}" class="chartImg pull-left">
+                  </a>
+                  
+                  <button ng-click="removeLog(log)" class="btn btn-sm btn-danger pull-right close" data-dismiss="modal">Delete Log</button>
+                </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

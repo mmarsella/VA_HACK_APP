@@ -1,0 +1,136 @@
+<link rel="stylesheet" href="../css/index.css">
+
+<div class="container-fluid">
+  <div class="container-fluid">
+   <!-- NAVBAR -->
+      <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                      
+                      <a class="navbar-brand" ng-href="/">VA-HACK</a>
+                <ul class="nav navbar-nav"></ul>
+
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right" id="navRight">
+                      <li> <img ng-src="{{currentUser.picture}}" class="userImage"></li>
+                      <li class="page-scroll">
+                        <a ng-href="/logout" cclass="btn btn-default pull-right loginBtn classBtn logout">| Logout</a>
+                    
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+      <!-- END NAVBAR -->
+  </div>
+
+  <div class="alert-success calAlert" ng-show="alertMessage != undefined && alertMessage != ''">
+    
+  <h4>{{alertMessage}}</h4>
+  </div>
+
+
+      
+    
+
+
+
+<!--     <div class="row">
+      <div class="col-xs-6 text-center">
+        <div class="span8 calendar" ng-model="eventSources2" calendar="myCalendar3" ui-calendar="uiConfig.calendar" ng-show="calendarVisible"></div>
+      </div>
+      <div class="col-xs-6">
+       <button type="button" class="btn btn-success text-center glyphicon glyphicon-plus" id="addLog" ng-click="isCollapsed = !isCollapsed" data-animation="am-fade-and-slide-right" data-placement="right" bs-aside="aside"> Add Log</button>
+      <div uib-collapse="isCollapsed">
+        <add-log-form class="am right am-slide-right"></add-log-form>
+      </div>
+    </div>
+  </div> -->
+
+   
+
+
+      
+    
+  
+</div>
+<!-- END CONTAINER FLUID -->
+
+
+
+
+<!-- <img src="http://worldartsme.com/images/ocean-water-clipart-1.jpg"> -->
+<!--   <div class="col-xs-4 text-center">
+
+    <div class="row">
+      <div class="col-xs-5">
+        <div id="hourBlock" class="text-center">
+            <span class="hourCounter" ng-model="hours">{{hours}}</span>
+          <h3 class="hourLabel">Hours</h3>
+        </div>  
+      </div>
+      <div class="col-xs-5">
+        <div id="daysBlock" class="text-center">
+          <span class="hourCounter" ng-model="days">{{days}}</span>
+          <h3 class="dayLabel">Days</h3>
+        </div>
+      </div>
+      <div class="col-xs-2"></div>
+    </div>
+  </div> -->
+
+<!-- 
+  <div class="col-xs-4 text-center">
+    <h3>Wave Avg</h3>
+   <div id="lineBlock">
+      <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" 
+        chart-legend="true" chart-click="onClick"></canvas> 
+   </div>
+  </div> -->
+
+
+<!--   <div class="col-xs-4 text-center">
+      <div id="locationBlock">
+        <h3 class="pieLabel">Locations</h3>
+        <canvas id="pie" class="chart chart-pie"
+        chart-data="pieData" chart-labels="pieLabels">
+      </canvas> 
+      </div>    
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<!--   <button ng-click="showAddForm()" ng-hide="addFormVisible" class="btn btn-primary">ADD LOG</button> -->
+
+
+
+<!--   <h4>THE FORECAST</h4>
+
+  <button ng-click="apiCall()" class="btn btn-success">API</button>
+
+  {{forecast.data}} -->
+
+
+
+
+
+
