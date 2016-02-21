@@ -27,6 +27,9 @@ header video-bg {
     height: auto;
     z-index: -100;
 }*/
+li {
+  list-style: none;
+}
 .logo {
   margin-left: -100px !important;
 }

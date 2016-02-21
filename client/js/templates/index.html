@@ -54,8 +54,8 @@
 
 <h1 id="results">Job Results for {{job.query}} </h1>
 <div class="col-xs-8">  
-  <ol ng-repeat="job in jobs | filter: job.query">
-  <div class="row job">
+  <ul ng-repeat="job in jobs | filter: job.query">
+ <!--  <div class="row job"> -->
     <li>
       <button class="btn btn-success" ng-click="showDetails()">{{job.name}} is now hiring a {{job.position}}</button>
       <p ng-hide="details">{{job.position}}</p>
@@ -65,8 +65,8 @@
       <p ng-hide="details">{{job.responsibilities}}</p>
      
     </li>
-    </div>
-  </ol>
+   <!--  </div> -->
+  </ul>
 </div>
 
 <div class="col-xs-4">  
