@@ -1,36 +1,38 @@
 <link rel="stylesheet" href="../css/index.css">
-  <div class="container-fluid">
    <!-- NAVBAR -->
-      <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header page-scroll">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                      
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <a class="logo navbar-brand navbar-left" ng-href="/home">VETCONNECT</a>
-                      </div>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right" id="navRight">
-                      <li> <img ng-src="{{currentUser.picture}}" class="userImage"></li>
-                      <li><a ng-href="/profile"> User Profile</a></li>
-                      <li class="page-scroll">
-                        <a ng-href="/logout">Logout</a>
-                    
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-      </nav>
-      <!-- END NAVBAR -->
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="vetLogo" href="/">VETCONNECT</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle userDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{currentUser.displayName}} | <img ng-src="{{currentUser.picture}}" class="userImage"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ng-href="/profile">About Me</a></li>
+            <li><a ng-href="/training">Training</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a ng-href="/logout">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
   </div>
 <div class="container">
 <!--   <h1 class="page-header">Edit Profile</h1> -->
@@ -38,8 +40,7 @@
     <!-- left column -->
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="text-center">
-        <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-        <h6>Upload a different photo...</h6>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Garfield_Building_Detroit.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
         <input type="file" class="text-center center-block well well-sm">
       </div>
           <div class="container">
@@ -69,35 +70,41 @@
       <form class="form-horizontal" role="form">
         <div class="form-group">
           <label class="col-lg-3 control-label">Description:</label>
-          <div class="col-lg-8">
+          <div class="col-lg-8 donte2">
             <p>Google Inc. is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software.</p>
           </div>
         </div>
         <div class="form-group">
           <label class="col-lg-3 control-label">CEO:</label>
-          <div class="col-lg-8">
+          <div class="col-lg-8 donte2">
             <p>Sundar Pichai</p>
           </div>
         </div>
         <div class="form-group">
           <label class="col-lg-3 control-label">Website:</label>
-          <div class="col-lg-8">
+          <div class="col-lg-8 donte2">
             <p>http://www.google.com</p>
           </div>
         </div>
-           <div class="form-group">
+        <div class="form-group">
           <label class="col-lg-3 control-label">Veteran Service Representatives:</label>
-          <div class="col-lg-8">
+          <div class="col-lg-8 donte2">
             <p>Dave Johnson</p>
           </div>
         </div>
           
            <div class="form-group">
           <label class="col-lg-3 control-label">Social Media:</label>
-          <div class="col-lg-8">
+          <div class="col-lg-8 donte2">
             <input class="form-control" value="" type="text">
           </div>
         </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">VET-RATING:</label>
+          <div class="col-lg-8 donte2">
+            <p>90%</p>
+          </div>
+        </div>   
         <div class="form-group">
           <label class="col-md-3 control-label"></label>
           <div class="col-md-8">
@@ -105,7 +112,12 @@
             <span></span>
             <input class="btn btn-default" value="Cancel" type="reset">
           </div>
-        </div>
+        </div> 
+
+
+
+
+
       </form>
     </div>
   </div>

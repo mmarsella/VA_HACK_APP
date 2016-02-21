@@ -104,10 +104,11 @@ app.controller('LogoutController', function($location, $auth) {
 app.controller('ProfileController', function($scope, $location, $auth) {
      $scope.currentUser = $auth.getPayload().user;
 
-
   });
 
 app.controller('TrainingController', function($scope,$location, $auth) {
+       $scope.currentUser = $auth.getPayload().user;
+
   $scope.training = [{name:"VetsInTech",website:"www.vetsintech.com"},{name:"VetForce",website:"veterans.force.com"}]
   });
 
@@ -146,10 +147,11 @@ app.controller('SignupController', function($scope, $location, $auth, UserServic
     };
 });
 
-app.controller('ProfileController', function($location, $auth) {
-
+app.controller('CompanyProfileController', function($scope,$location, $auth) {
+     $scope.currentUser = $auth.getPayload().user;
   });
 
-app.controller('PostJobController', function($location, $auth) {
+app.controller('PostJobController', function($scope,$location, $auth) {
+       $scope.currentUser = $auth.getPayload().user;
 
   });

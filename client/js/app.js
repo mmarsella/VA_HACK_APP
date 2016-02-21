@@ -32,8 +32,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider, ChartJsPro
       loginRequired: loginRequired
     }
   })
-
-       .when('/companyprofile', {
+    .when('/companyprofile', {
     controller: "CompanyProfileController",
     templateUrl: "templates/company-profile.html",
     // if promise is resolves, do all this,
@@ -43,7 +42,7 @@ app.config(function($routeProvider, $locationProvider, $authProvider, ChartJsPro
     }
   })
 
-              .when('/training', {
+    .when('/training', {
     controller: "TrainingController",
     templateUrl: "templates/training.html",
     // if promise is resolves, do all this,
