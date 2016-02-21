@@ -24,6 +24,16 @@ app.config(function($routeProvider, $locationProvider, $authProvider, ChartJsPro
       loginRequired: loginRequired
     }
   })
+
+    .when('/profile', {
+    controller: "ProfileController",
+    templateUrl: "templates/profile.html",
+    // if promise is resolves, do all this,
+    // if rejected, go to .otherwise
+    resolve: {
+      loginRequired: loginRequired
+    }
+  })
   .when('/', {
     controller: "LoginController",
     templateUrl: "templates/login.html",
