@@ -1,0 +1,29 @@
+body{
+  background-image: url("http://wallpapercave.com/wp/E06IWnn.jpg");
+}
+
+#vetButton{
+    width: 184px;
+    height: 140px;
+    font-weight: bolder;
+}
+
+#vetButton:hover{
+  background-color: green;
+}
+
+#empButton{
+    width: 184px;
+    height: 140px;
+    float: right;
+    font-weight: bolder;
+}
+
+#empButton:hover{
+  background-color: green;
+}
+
+.toggleBtn{
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
