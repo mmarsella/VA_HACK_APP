@@ -2,6 +2,7 @@
 // USER DASHBOARD
 app.controller("MainController", function($scope,$auth,$compile,$timeout, uiCalendarConfig){
    $scope.currentUser = $auth.getPayload().user;
+   $scope.jobs = [{name:"Google"}]
 
 });  // END CONTROLLER
 
