@@ -53,17 +53,13 @@
   <h4>{{alertMessage}}</h4>
   </div>
 
-<h1 id="results">Job Results for {{job.query}} </h1>
+<h1 id="results">Veteran Training & Education Resources </h1>
 <div class="col-xs-8">  
-  <ul ng-repeat="job in jobs | filter: job.query">
- <!--  <div class="row job"> -->
+  <ul ng-repeat="t in training | filter: t.query">
+ <!--  <div class="row t"> -->
     <li>
-      <button class="btn btn-success" ng-click="showDetails()">{{job.name}} is now hiring a {{job.position}}</button>
-      <p ng-hide="details">{{job.position}}</p>
-      <p ng-hide="details">{{job.description}}</p>
-      <p ng-hide="details">{{job.experience}}</p>
-      <p ng-hide="details">{{job.required}}</p>
-      <p ng-hide="details">{{job.responsibilities}}</p>
+      <button class="btn btn-success" ng-click="showDetails()">{{t.name}}</button>
+      <p ng-hide="details">{{t.website}}</p>
      
     </li>
    <!--  </div> -->
@@ -74,8 +70,4 @@
   <div id='map'></div>
 </div>
 
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZGlnaXRhbGFydGNyZXciLCJhIjoiY2lrY2pibHNrMG0zbnZoa3Uwd2dzMHdrNiJ9.qVjcEgr_bpv5TCmso_hkjA';
-var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([40, -74.50], 9);
-</script>
+

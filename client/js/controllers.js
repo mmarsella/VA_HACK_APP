@@ -64,6 +64,10 @@ app.controller('ProfileController', function($location, $auth) {
 
   });
 
+app.controller('TrainingController', function($scope,$location, $auth) {
+  $scope.training = [{name:"VetsInTech",website:"www.vetsintech.com"},{name:"VetForce",website:"veterans.force.com"}]
+  });
+
 app.controller('SignupController', function($scope, $location, $auth, UserService) {
     $scope.isVet = false;
     $scope.isEmp = false;
