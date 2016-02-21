@@ -9,8 +9,6 @@ app.controller("MainController", function($scope,$auth,$compile,$timeout, uiCale
    $scope.showDetails = function(){
     $scope.details = $scope.details ? false : true;
     }
-   
-
 });  // END CONTROLLER
 
 app.controller("LoginController", function($scope, $auth, $location, UserService){
@@ -61,6 +59,10 @@ app.controller('LogoutController', function($location, $auth) {
   });
 
 app.controller('ProfileController', function($location, $auth) {
+
+  });
+
+app.controller('PostJobController', function($location, $auth) {
 
   });
 

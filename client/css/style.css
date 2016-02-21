@@ -27,6 +27,21 @@ header video-bg {
     height: auto;
     z-index: -100;
 }*/
+.radio-inline{
+  margin-right: 40px;
+}
+
+.radioHeader{
+  display: inline-block;
+  width: 100px;
+  height: ;
+  text-align: center;
+}
+
+.headContainer{
+  margin-left: 100px;
+}
+
 li {
   list-style: none;
 }
