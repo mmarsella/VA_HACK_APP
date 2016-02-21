@@ -115,12 +115,6 @@ app.controller('SignupController', function($scope, $location, $auth, UserServic
     $scope.isVet = false;
     $scope.isEmp = false;
 
-    
-
-
-
-
-
     $scope.signup = function() {
       $auth.signup($scope.user)
         .then(function(response) {
@@ -151,3 +145,11 @@ app.controller('SignupController', function($scope, $location, $auth, UserServic
         });
     };
 });
+
+app.controller('ProfileController', function($location, $auth) {
+
+  });
+
+app.controller('PostJobController', function($location, $auth) {
+
+  });

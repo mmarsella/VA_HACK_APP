@@ -28,8 +28,6 @@ app.config(function($routeProvider, $locationProvider, $authProvider, ChartJsPro
     .when('/profile', {
     controller: "ProfileController",
     templateUrl: "templates/profile.html",
-    // if promise is resolves, do all this,
-    // if rejected, go to .otherwise
     resolve: {
       loginRequired: loginRequired
     }
@@ -72,6 +70,15 @@ app.config(function($routeProvider, $locationProvider, $authProvider, ChartJsPro
   .when('/logout', {
     template: null,
     controller: 'LogoutController'
+  })
+  .when('/postjob', {
+    controller: "PostJobController",
+    templateUrl: "templates/postJob.html",
+    // if promise is resolves, do all this,
+    // if rejected, go to .otherwise
+    resolve: {
+      loginRequired: loginRequired
+    }
   })
   .otherwise({redirectTo:'/'});
 
