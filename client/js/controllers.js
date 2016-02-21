@@ -2,16 +2,16 @@
 // USER DASHBOARD
 app.controller("MainController", function($scope,$auth,$compile,$timeout, uiCalendarConfig){
    $scope.currentUser = $auth.getPayload().user;
-   $scope.jobs = [{name:"Google"}]
+   $scope.jobs = [{name:"Google",position:"Software Engineer",description:"Searching for someone with experience in NodeJS, AngularJS, JavaScript and SQL.",experience:"5 Years",education:"BA Computer Science"},
+   {name:"Ebay",position:"Front End Engineer",description:"Searching for someone with experience in NodeJS, AngularJS, JavaScript and SQL.",experience:"5 Years",education:"BA Computer Science"},
+   {name:"Facebook",position:"Backend Software Engineer",description:"Searching for someone with experience in NodeJS, AngularJS, JavaScript and SQL.",experience:"5 Years",education:"BA Computer Science"}]
+   $scope.details = true;
+   $scope.showDetails = function(){
+    $scope.details = $scope.details ? false : true;
+    }
+   
 
 });  // END CONTROLLER
-
-
-
-
-
-
-
 
 app.controller("LoginController", function($scope, $auth, $location, UserService){
   $scope.showSignUp = false;

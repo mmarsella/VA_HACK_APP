@@ -28,10 +28,49 @@ header video-bg {
     z-index: -100;
 }*/
 
+#results{
+  margin-left: 20px;
+}
+.search-all{
+  width: 500px;
+}
+
+#vetButton{
+    width: 184px;
+    height: 140px;
+    font-weight: bolder;
+}
+
+#vetButton:hover{
+  background-color: green;
+}
+
+#empButton{
+    width: 184px;
+    height: 140px;
+    float: right;
+    font-weight: bolder;
+}
+
+#empButton:hover{
+  background-color: green;
+}
+
+.toggleBtn{
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+
 
 
 
 /******/
+@media (min-width: 768px)
+.navbar-form .form-control {
+    display: inline-block;
+    width: 344px;
+    vertical-align: middle;
+}
 
 #video{
   width: 100%;
