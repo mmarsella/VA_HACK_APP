@@ -1,37 +1,43 @@
-<!-- <link rel="stylesheet" href="../css/login.css"> -->
-  <video-bg video-id="video.id" end="23" id="video">
+<link rel="stylesheet" href="../css/login.css">
+  <!-- <video-bg video-id="video.id" end="23" id="video"> -->
     <sign-up ng-show="showSignUp"></sign-up>
 
      <div class="container text-center" ng-hide="showSignUp">
        <div class="loginForm text-center">
           <h2 style="color:white">VA-HACK</h2>
+
+
+          
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                           <div class="form-top">
-                            <div class="form-top-left">
-                              <h3>Welcome to VA-HACK</h3>
-                                <p>Enter your username and password to log on:</p>
-                            </div>
-                            <div class="form-top-right">
-                              <i class="fa fa-lock"></i>
-                            </div>
-                            </div>
-                            <div class="form-bottom">
-                          <form role="form" method="POST" class="login-form" ng-submit="login(user)">
-                            <div class="form-group">
-                              <label class="sr-only" for="form-username">Email</label>
-                                <input type="text" name="form-username" placeholder="Email.." class="form-username form-control" id="form-username" ng-model="user.email" id="email">
+                              <div class="form-top-left">
+                                <h3>Welcome to VA-HACK</h3>
+                                  <p>Enter your username and password to log on:</p>
                               </div>
+                              <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                              </div>
+                            </div>
+                          <div class="form-bottom">
+                            <form role="form" method="POST" class="login-form" ng-submit="login(user)">
                               <div class="form-group">
-                                <label class="sr-only" for="form-password">Password</label>
-                                <input type="password" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="user.password" name="password">
-                              </div>
-                              <button type="submit" class="btn">Sign in!</button>
-                              <p>Don't have an account? Sign up! <a id="signuplink" ng-click="showSignUp = !showSignUp">here</a></p>
-                          </form>
+                                <label class="sr-only" for="form-username">Email</label>
+                                  <input type="text" name="form-username" placeholder="Email.." class="form-username form-control" id="form-username" ng-model="user.email" id="email">
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="form-password">Password</label>
+                                  <input type="password" placeholder="Password..." class="form-password form-control" id="form-password" ng-model="user.password" name="password">
+                                </div>
+                                <button type="submit" class="btn">Sign in!</button>
+                                <p>Don't have an account? Sign up! <a id="signuplink" ng-click="showSignUp = !showSignUp">here</a></p>
+                            </form>
                         </div>
                         </div>
                     </div>
+
+
+
                       <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
                           <h3>...or login with:</h3>
