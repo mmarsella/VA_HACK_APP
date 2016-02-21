@@ -60,6 +60,10 @@ app.controller('LogoutController', function($location, $auth) {
       });
   });
 
+app.controller('ProfileController', function($location, $auth) {
+
+  });
+
 app.controller('SignupController', function($scope, $location, $auth, UserService) {
     $scope.isVet = false;
     $scope.isEmp = false;
