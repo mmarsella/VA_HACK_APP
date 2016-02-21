@@ -1,3 +1,106 @@
-/*body {
-  background-image: url("");
-}*/
+body {
+  /*background-color: red;*/
+}
+
+.navStuff{
+  margin-top: 6px;
+}
+
+.userImage{
+  border-radius: 46%;
+}
+
+#vetLogo{
+  margin-top: 6px;
+}
+
+#searchBar{
+    width: 400px;
+}
+
+
+li a.userDropdown{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+.navbar{
+      background-image: linear-gradient(#2E6DA4, #2fa4e7 60%, #1d9ce5);
+}
+
+
+#postImg{
+  width:200px;
+}
+
+#post{
+  background-color: #F8F8F8;
+  border:1px solid #E7E7E7;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#date{
+  margin-top: 60px;
+}
+
+.posVote{
+  color:green;
+}
+
+.negVote{
+  color:red;
+}
+
+#formPost{
+  margin-bottom: 20px;
+}
+
+#addComment{
+  margin-top: 10px;
+}
+
+#comments{
+  margin-top: 10px;
+}
+
+.ng-enter {
+  transition:0.4s ease all;
+  opacity:0;
+  transform:translateX(-100%);
+}
+
+.ng-enter.ng-enter-active {
+  opacity:1;
+  transform:translateX(0);
+}
+
+.ng-leave {
+  transition:0.4s ease all;
+  opacity:1;
+  transform:translateX(0);
+}
+
+.ng-leave.ng-leave-active {
+  opacity:0;
+  transform:translateX(-100%);
+}
+
+.ng-enter-stagger, .ng-leave-stagger {
+  transition-delay: 0.5s;
+  transition-duration:0;
+}
+
+.ng-hide {
+  transition:0.5s linear all;
+  opacity:0;
+}
+.ng-show {
+  transition:0.5s linear all;
+  opacity:1;
+}
+
+#postImg{
+  border-radius: 15%;
+}

@@ -1,39 +1,42 @@
 <link rel="stylesheet" href="../css/index.css">
-  <div class="container-fluid">
    <!-- NAVBAR -->
-      <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header page-scroll">
+   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="vetLogo" ng-href="/">VETCONNECT</a>
+    </div>
 
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                      
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <a class="logo navbar-brand navbar-left" ng-href="/home">VETCONNECT</a>
-                      </div>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right" id="navRight">
-                      <li> <img ng-src="{{currentUser.picture}}" class="userImage"></li>
-                      <li><a ng-href="/profile"> User Profile</a></li>
-                      <li><a ng-href="/training"> Training</a></li>
-                      <li class="page-scroll">
-                        <a ng-href="/logout">Logout</a>
-                    
-                      </li>
-                  </ul>
-              </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-      </nav>
-      <!-- END NAVBAR -->
-  </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" id="searchBar" placeholder="Search Jobs" ng-model="job.query">
+        </div>
+        <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle userDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{currentUser.displayName}} | <img ng-src="{{currentUser.picture}}" class="userImage"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ng-href="/profile">About Me</a></li>
+            <li><a ng-href="/training">Training</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a ng-href="/logout">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 
